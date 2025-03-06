@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.version = '5.0.4-beta'
     s.homepage = "https://github.com/alibaba/handyjson"
-    s.name = "HandyJSON"
+    s.name = "HandyJSON-Re"
 
     s.source_files = 'Source/**/*.{swift,h,m}'
     s.source = { :git => 'https://github.com/alibaba/HandyJSON.git', :tag => s.version.to_s }
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.9'
     s.watchos.deployment_target = '2.0'
     s.tvos.deployment_target = '9.0'
+    s.swift_version = '5.0'
 
     s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 end
